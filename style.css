@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-color:   hsl(0, 100%, 74%) ;
+    background-image: url(bg-intro-desktop.png);
+    font-family:  "Poppins" ;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:5em;
+    width: 76%;
+    padding:2em;
+    gap: 100px;
+}
+.payment{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    border: 1px solid   hsl(248, 32%, 49%);
+    text-align: center;
+   background-color:hsl(248, 32%, 49%) ;
+   border-radius: 4%;
+     box-shadow : 0px 5px 1px rgba(54, 54, 54, 0.397);
+     
+   
+}
+.first{
+    color: white;
+}
+.second{
+    color: hsl(246, 25%, 77%);
+}
+.wrap{
+    text-align: center;
+    background-color: white;
+    padding: 2em;
+    border-radius: 3%;
+    box-shadow : 0px 5px 1px rgba(54, 54, 54, 0.397);
+}  
+input{
+   border: 1px solid hsl(246, 25%, 77%);
+    padding: 1em;
+    border-radius: 0.4em;
+   width: 90%;
+}
+.btn{
+    cursor: pointer;
+    border: 1px solid hsl(154, 58%, 42%);
+    padding: 1em;
+    border-radius: 0.4em;
+   width: 97%;
+   background-color: hsl(154, 59%, 51%);
+   color: white;
+   box-shadow : 0px 5px 1px hsla(154, 58%, 42%, 0.541);
+   font-family: "Poppins";
+   font-weight: 500;
+}
+.btn:hover {
+    background-color: hsl(154, 43%, 58%);
+    border: 1px solid hsl(154, 58%, 42%);
+    color: white;
+    transition-duration: 0.4s;
+    width: 95%;}
+.terms{
+    color:   hsl(246, 25%, 77%);;
+}
+.agree{
+    font-size:11px;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
+.career{
+    text-decoration: none;
+}
+.flex1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.introh{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 0.1;
+}
+.introp{
+    font-size: 13px;
+    line-height: 0.3;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.flex2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 47%;
+}
+
+  
+  input:focus:invalid {
+    border-color: hsl(0, 100%, 74%) ;
+    background: url(icon-error.svg)no-repeat scroll 360px 10px;
+    border-width: 3px;
+    
+  }
+input:valid {
+    border: 3px solid hsl(154, 59%, 51%);
+} 
+@media (min-width: 350px) and (max-width: 500px) {
+    main{
+        flex-direction: column;
+    }
+    .introh{
+        text-align: center;
+        line-height: 0.5;
+        font-size: 13px;
+    }
+    .introp{
+        line-height:1;
+        text-align: center;
+        font-size: 8px;
+    }
+.flex2{
+    width: 100%;
+}
+input:focus:invalid {
+    border-color: hsl(0, 100%, 74%) ;
+    background: url(icon-error.svg)no-repeat scroll 180px 5px;
+    border-width: 3px;
+    
+  }
+}
+
